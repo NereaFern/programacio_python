@@ -1,0 +1,22 @@
+#R0_Pag_121.2_exemple_granota.py
+from random import*
+#Inicialitzem variables:
+x=0 #Moviment en l'eix de les x
+y=0 #Moviment en l'eix de les y
+i=0 #Comptador
+while x!=4 and x!=-4 or y!=4 and y!=-4:
+    numero= randint(1,4)
+    if numero==1 and x<4 and x>-4:
+        x+=1
+    elif numero==2 and x<4 and x>-4:
+        x-=1
+    elif numero==3 and y<4 and y>-4:
+        y+=1
+    elif numero==4 and y<4 and y>-4:
+        y-=1
+    elif x>=4 or x<=-4:
+        x=x
+    else:
+        y=y
+    i+=1
+print(f"La posició de la granota és P({x},{y}) i hem agut de fer {i} intents")
